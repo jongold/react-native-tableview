@@ -1,7 +1,6 @@
 'use strict';
 import React, { Component } from 'react';
 import {
-    NativeMethodsMixin,
     ReactNativeViewAttributes,
     NativeModules,
     StyleSheet,
@@ -22,8 +21,6 @@ function extend(el, map) {
     return el;
 }
 var TableView = React.createClass({
-    mixins: [NativeMethodsMixin],
-
     propTypes: {
         onPress: React.PropTypes.func,
         onAccessoryPress: React.PropTypes.func,
